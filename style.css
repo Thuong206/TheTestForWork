@@ -1,0 +1,356 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primery-main  : #0e50a4;
+    --primery-orange: #fe4543;
+    --primery-green : #008816;
+    --primery-white : #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: .5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #ecf1f8;
+    min-height      : 100vh;
+    overflow-x      : hidden;
+}
+
+header {}
+
+.head {
+    height          : 10vh;
+    background-color: var(--primery-white);
+    width           : 96%;
+    margin-left     : 63px;
+    display         : flex;
+    box-shadow      : 2px 2px 5px grey;
+    justify-content : space-between;
+    align-items     : center;
+    position        : fixed;
+    top             : 0;
+
+}
+
+
+.head--menu {
+    color      : var(--primery-main);
+    margin-left: 15px;
+    font-size  : 4vh;
+    cursor     : pointer;
+}
+
+.head--logo {
+    cursor: pointer;
+}
+
+.head--person__right {
+    font-size   : 5vh;
+    display     : flex;
+    margin-right: 25px;
+    align-items : center;
+}
+
+.head--person__right .notifi {
+    color   : gray;
+    margin  : 0 10px;
+    position: relative;
+}
+
+.head--person__right .notifi::before {
+    content         : '';
+    position        : absolute;
+    width           : 10px;
+    height          : 10px;
+    background-color: red;
+    right           : 0;
+    border-radius   : 50%;
+
+}
+
+.head--person__right .profile {
+    border       : 2px solid var(--primery-main);
+    width        : 40px;
+    border-radius: 50%;
+    text-align   : center;
+    color        : rgb(36, 43, 43);
+}
+
+.nav-col-left {
+    position        : fixed;
+    width           : 10vh;
+    background-color: var(--primery-white);
+    top             : 0;
+    left            : 0;
+    bottom          : 0;
+    box-shadow      : 2px 2px 5px grey;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    overflow-y      : hidden;
+
+}
+
+.nav-col-left .logo {
+    width : 6vh;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+img {
+    width          : 100%;
+    height         : 100%;
+    object-fit     : cover;
+    object-position: center;
+}
+
+.nav-col-left .nav-icon {
+    margin       : 6px 0;
+    font-size    : 2.5vh;
+    cursor       : pointer;
+    color        : var(--primery-main);
+    border-radius: 50%;
+    border       : 1px solid;
+    width        : 6vh;
+    text-align   : center;
+    height       : 6vh;
+    line-height  : 6vh;
+}
+
+.nav-col-left .nav-icon:nth-child(14) {
+    background-color: var(--primery-main);
+    color           : var(--primery-white);
+}
+
+.nav-col-left:hover {
+    overflow-y: auto;
+}
+
+#container {
+    width : 92%;
+    margin: 7vh 0 5vh 14vh;
+}
+
+h2 {
+    margin: 0 0 10px 10px;
+}
+
+.container__on {
+    background-color: var(--primery-white);
+    box-shadow      : 2px 2px 5px grey;
+    border-radius   : 10px;
+    padding         : 8px 15px;
+}
+
+h3 {
+    margin: 0px 0 10px;
+}
+
+.container__on-money {
+    margin : 10px 0;
+    display: flex;
+}
+
+.money--total {
+    width: 45vh;
+
+}
+
+.money--total h2 {
+    margin        : 10px 0;
+    letter-spacing: 3px;
+}
+
+.money--total p {
+    color    : blue;
+    font-size: 18px;
+}
+
+.money--button button {
+    border       : none;
+    outline      : none;
+    font-size    : 3vh;
+    padding      : 5px 40px;
+    border-radius: 7px;
+    margin       : 5px 0;
+    color        : white;
+    width        : 33vh;
+    cursor       : pointer;
+}
+
+
+.money--button button:first-child {
+    background-color: var(--primery-green);
+}
+
+.money--button button:last-child {
+    background-color: var(--primery-orange);
+}
+
+.money--cards {
+    margin: 0 30px;
+}
+
+.money--cards p {
+    color    : blue;
+    font-size: 18px;
+}
+
+.money--atm {
+    display: flex;
+}
+
+.money--atm .push--atm {
+    width          : 40vh;
+    height         : 25vh;
+    border         : 1px solid gray;
+    margin         : 10px 0;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    cursor         : pointer;
+}
+
+.money--atm .push--atm .plush--atm {
+    color        : white;
+    background   : gray;
+    padding      : 10px;
+    border-radius: 50%;
+    height       : 34px;
+}
+
+.money--atm .card-atm {
+    width        : 44vh;
+    height       : 25vh;
+    margin       : 10px;
+    border-radius: 10px;
+    overflow     : hidden;
+    cursor       : pointer;
+}
+
+.container__down {
+    background-color: var(--primery-white);
+    box-shadow      : 2px 2px 5px grey;
+    border-radius   : 10px;
+    padding         : 8px 15px;
+    margin-top      : 5vh;
+}
+
+.container__down--head {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.head--left {
+    display: flex;
+}
+
+.head--left p {
+    width        : 22vh;
+    line-height  : 3.5vh;
+    border-radius: 20px;
+    text-align   : center;
+    height       : 4vh;
+    border       : 1px solid gray;
+    cursor       : pointer;
+}
+
+.head--left p:first-child {
+    background-color: var(--primery-main);
+    color           : var(--primery-white);
+}
+
+.head--right select {
+    width        : 25vh;
+    border-radius: 10px;
+    color        : blue;
+}
+
+table {
+    width          : 100%;
+    border         : 1px solid gray;
+    margin         : 20px 0;
+    border-collapse: separate;
+    border-spacing : 0 10px;
+}
+
+td,
+th {
+    text-align  : center;
+    border-right: 1px solid gray;
+}
+
+th select {
+    width        : 20px;
+    border-radius: 10px;
+}
+
+td button {
+    border          : none;
+    outline         : none;
+    font-size       : 15px;
+    padding         : 5px 30px;
+    border-radius   : 5px;
+    background-color: var(--primery-green);
+    color           : white;
+    cursor          : pointer;
+    width           : 18vh;
+}
+
+.error {
+    background-color: var(--primery-orange);
+}
+
+.img--table {
+    width : 6.5vh;
+    margin: 0 auto;
+}
+
+tbody tr {
+    margin-top: 10px;
+}
+
+.container__down-change {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.change--icon {
+    margin       : 0 10px;
+    cursor       : pointer;
+    padding      : 7px 12px;
+    border-radius: 50%;
+}
+
+.change--icon:hover {
+    background: gray;
+}
+
+.change--page span:first-child {
+    background: var(--primery-main);
+    color     : white;
+}
+
+.change--page span {
+    border       : 1px solid var(--primery-main);
+    color        : var(--primery-main);
+    border-radius: 50%;
+    padding      : 6px 10px;
+    margin       : 0 3px;
+    cursor       : pointer;
+}
+
+.change--page span:last-child {
+    padding: 6px 8px;
+}
